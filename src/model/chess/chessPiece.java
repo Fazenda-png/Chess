@@ -3,11 +3,11 @@ package model.chess;
 import model.bordergame.Board;
 import model.bordergame.Piece;
 
-public class chessPiece extends Piece {
+public class ChessPiece extends Piece {
 
 	private Color color;
 
-	public chessPiece(Board board, Color color) {
+	public ChessPiece(Board board, Color color) {
 		super(board);
 		this.color = color;
 	}
