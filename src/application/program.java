@@ -1,10 +1,12 @@
 package application;
 
+import model.chess.chessMath;
+
 public class program {
 
 	public static void main(String[] args) {
-		System.out.println("Hello!");
-
+		chessMath chessmath = new chessMath();
+		UI.printBoard(chessmath.getPieces());
 	}
 
 }
