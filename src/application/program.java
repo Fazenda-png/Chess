@@ -17,10 +17,13 @@ public class program {
 		while (true) {
 			try {
 				UI.clearScreen();
-				UI.printBoard(chessmath.getPieces());
+				UI.printMatch(chessmath);
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
+				
+				boolean[][] possibleMoves = chessmath.possibleMoves(source);
+				UI.printBoard(chessmath.getPieces(), possibleMoves);
 
 				System.out.println();
 				System.out.print("target: ");
